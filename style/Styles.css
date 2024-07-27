@@ -1030,7 +1030,7 @@ footer{
 .img__text-container{
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 42.5%;
     top: 32%;
     text-align: center;
 }
@@ -1044,6 +1044,14 @@ footer{
     font-family: 'poppins-bold';
     font-size: 48px;
     color: var(--white2);
+}
+.right__buttons{
+    margin-top: 7rem;
+    text-align: center;
+}
+.properties--secondPage{
+    justify-content: center;
+    margin-top: 4rem;
 }
                      /* Media Query's  */
 @media (max-width: 1440px){

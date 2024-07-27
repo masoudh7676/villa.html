@@ -25,7 +25,7 @@ $.addEventListener ('keydown', (e) =>{    //Left And Right Arrow Key Function Fo
     }
 })
 $.addEventListener('DOMContentLoaded', () => {  //Onload Event
-    const preloadOverlay = document.querySelector('.preload-overlay');
+    const preloadOverlay = $.querySelector('.preload-overlay');
     preloadOverlay.style.display = 'none';
 });
 const hamMenu = $.querySelector ('.burger__menu')
@@ -40,7 +40,7 @@ $.addEventListener('keydown', (e) =>{       //When Press ESC button The Ham Menu
     mobileMenu.classList.remove('active')
   }
 })
-document.addEventListener('click', (e) => { // Closing Mobile Menu When clicking anywhere except the menu
+$.addEventListener('click', (e) => { // Closing Mobile Menu When clicking anywhere except the menu
   if (!mobileMenu.contains(e.target) && !e.target.classList.contains('burger__menu')) {
     hamMenu.classList.remove('active');
     mobileMenu.classList.remove('active');
