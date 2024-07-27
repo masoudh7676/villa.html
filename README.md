@@ -1,7 +1,9 @@
+# this is open source tempalte i used from  <a href = "https://templatemo.com/"> Tempaltemo </a>
 
-## this Villa landing page created by: html, css & js and contain page's: Home, Properties, property Details, Contact us, and i did not use bootstrap or css tailwind.
+### this villa page contain's: Home, Properties, property Detail's, Contact us.
+### the original template was created with bootstrap, and i rebuild it with my own skills and coding style, just used pure html, css and js.
 
-## Some Features:
+## i added Some Features:
 ### 1. for better user experience i added left and right arrow for next or previous image.
 ### 2. has customized scrollbar.
 
