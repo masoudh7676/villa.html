@@ -109,15 +109,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 <!-- 4 botton's -->
                  <div class="container">
                 <div class="right__buttons">
-                    <button class="active__btn">Show All</button>
-                    <button class="">apartment</button>
-                    <button class="">Villa house</button>
-                    <button class="">Penthouse</button>
+                    <button class="active__btn button" data-filter="*">Show All</button>
+                    <button class="button" data-filter=".apartment">apartment</button>
+                    <button class="button" data-filter=".villa">Villa house</button>
+                    <button class="button" data-filter=".penthouse">Penthouse</button>
                 </div>
             </div>
-            <div class="properties">
+            
+            <div class="container">
             <div class="properties__contents properties--secondPage">
-                <div class="content">
+                <div class="content villa">
                     <div class="img__container">
                         <img src="images/property-01.jpg" alt="Villa">
                     </div>
@@ -140,7 +141,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         <a href="" class="black__btn">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content villa">
                     <div class="img__container">
                         <img src="images/property-02.jpg" alt="Villa">
                     </div>
@@ -163,7 +164,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         <a href="" class="black__btn">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content villa">
                     <div class="img__container">
                         <img src="images/property-03.jpg" alt="Villa">
                     </div>
@@ -186,7 +187,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         <a href="" class="black__btn">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content apartment">
                     <div class="img__container">
                         <img src="images/property-04.jpg" alt="Villa">
                     </div>
@@ -209,7 +210,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         <a href="" class="black__btn">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content penthouse">
                     <div class="img__container">
                         <img src="images/property-05.jpg" alt="Villa">
                     </div>
@@ -232,7 +233,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                         <a href="" class="black__btn">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content">
+                <div class="content penthouse">
                     <div class="img__container">
                         <img src="images/property-06.jpg" alt="Villa">
                     </div>
@@ -260,9 +261,32 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
         </div>
             </main>
 
-
+            
+            <!--  Jquery Link  -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <!--  Isotope Filter Link  -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+            <script type="text/javascript">
+                // Get the container element
+                var $container = jQuery('.properties__contents');
+              
+                // Initialize Isotope
+                $container.isotope({
+                  itemSelector: '.content',
+                  layoutMode: 'fitRows'
+                });
+              
+                // Filter buttons
+                jQuery('.right__buttons .button').on('click', function() {
+                    jQuery('.right__buttons .button').removeClass('active__btn');
+                    jQuery(this).addClass('active__btn');
+                  var filterValue = jQuery(this).attr('data-filter');
+                  $container.isotope({ filter: filterValue });
+                });
+              
+                // Show all items on page load
+                jQuery('.right__buttons .active__btn').trigger('click');
+              </script>
             <script src="script/app.js"></script>
-            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-            <script src="/path/to/isotope.pkgd.min.js"></script>
 </body>
 </html>

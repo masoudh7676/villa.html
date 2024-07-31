@@ -39,6 +39,8 @@ a {
     margin-right: auto;
     padding: 10px 1px;                           
 }
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
                                                        /* ========> component's End<======== */
 *::-webkit-scrollbar {
     height: 10px;
@@ -647,6 +649,10 @@ a {
     color: var(--white);
 }
 .active__btn{
+    background-color: var(--orange);
+    color: var(--white);
+}
+.active{
     background-color: var(--orange);
     color: var(--white);
 }
