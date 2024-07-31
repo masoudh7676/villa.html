@@ -652,10 +652,6 @@ a {
     background-color: var(--orange);
     color: var(--white);
 }
-.active{
-    background-color: var(--orange);
-    color: var(--white);
-}
 .right__buttons :nth-child(1){
     background-color: var(--orange);
 }
