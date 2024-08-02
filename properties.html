@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>properties</title>
     <link rel="stylesheet" href="style/reset.css">
     <!-- Reset Css -->
@@ -16,7 +16,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
             <header>
-                <div class="container">
+                <div class="container2">
                     <!-- Navigation Menu Start -->
                     <section class="nav__top d-flex">
                         <div class="left__nav">
@@ -108,15 +108,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </div>
                 <!-- 4 botton's -->
                  <div class="container">
-                <div class="right__buttons">
-                    <button class="active__btn button" data-filter="*">Show All</button>
-                    <button class="button" data-filter=".apartment">apartment</button>
-                    <button class="button" data-filter=".villa">Villa house</button>
-                    <button class="button" data-filter=".penthouse">Penthouse</button>
+                <div class="right__buttons buttons--scndPage">
+                    <button class="active__btn button filter--button" data-filter="*">Show All</button>
+                    <button class="button filter--button" data-filter=".apartment">apartment</button>
+                    <button class="button filter--button" data-filter=".villa">Villa house</button>
+                    <button class="button filter--button" data-filter=".penthouse">Penthouse</button>
                 </div>
             </div>
             
-            <div class="container">
+            <div class="container2">
             <div class="properties__contents properties--secondPage">
                 <div class="content villa">
                     <div class="img__container">
@@ -260,7 +260,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             </div>
         </div>
             </main>
-
+            <footer>
+                <p class="footer__text">Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: <a class="copy__right" rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            </footer>
             
             <!--  Jquery Link  -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
