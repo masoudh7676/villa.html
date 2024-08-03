@@ -118,13 +118,13 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             
             <div class="container2">
             <div class="properties__contents properties--secondPage">
-                <div class="content villa">
+                <div class="content content--scndPage villa">
                     <div class="img__container">
                         <img src="images/property-01.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>luxury villa</button>
-                        <p class="price">2.226.000</p>
+                        <p class="price price--scndPage">2.226.000</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -138,16 +138,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content villa">
+                <div class="content content--scndPage villa">
                     <div class="img__container">
                         <img src="images/property-02.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>luxury villa</button>
-                        <p class="price">1.180.0000</p>
+                        <p class="price price--scndPage">1.180.0000</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -161,16 +161,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content villa">
+                <div class="content content--scndPage villa">
                     <div class="img__container">
                         <img src="images/property-03.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>luxury villa</button>
-                        <p class="price">1.460.0000</p>
+                        <p class="price price--scndPage">1.460.0000</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -184,16 +184,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content apartment">
+                <div class="content content--scndPage apartment">
                     <div class="img__container">
                         <img src="images/property-04.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>apartment</button>
-                        <p class="price">584.500</p>
+                        <p class="price price--scndPage">584.500</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -207,16 +207,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content penthouse">
+                <div class="content content--scndPage penthouse">
                     <div class="img__container">
                         <img src="images/property-05.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>penthouse</button>
-                        <p class="price">925.600</p>
+                        <p class="price price--scndPage">925.600</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -230,16 +230,16 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
-                <div class="content penthouse">
+                <div class="content content--scndPage penthouse">
                     <div class="img__container">
                         <img src="images/property-06.jpg" alt="Villa">
                     </div>
                     <div class="detail d-flex">
                         <button>modern condo</button>
-                        <p class="price">450.000</p>
+                        <p class="price price--scndPage">450.000</p>
                     </div>
                     <p class="detail__text">18 new street miami, or 97219</p>
                     <div class="villa__description--top">
@@ -253,7 +253,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                     </div>
                     <div class="border__bottom"></div>
                     <div class="button">
-                        <a href="" class="black__btn">schedule a visit</a>
+                        <a href="" class="black__btn black__btn--scndPage">schedule a visit</a>
                     </div>
                 </div>
             </div>
@@ -275,7 +275,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 // Initialize Isotope
                 $container.isotope({
                   itemSelector: '.content',
-                  layoutMode: 'fitRows'
+                  layoutMode: 'fitRows',
+                  responsive: [
+                    {
+                        breakpoint: 442,
+                        options: {
+                            layoutMode: 'vertical',
+                        },
+                    },
+                  ]
                 });
               
                 // Filter buttons

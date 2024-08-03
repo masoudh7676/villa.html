@@ -1033,7 +1033,7 @@ footer{
     height: 56vh;
 }
 .img__banner img{
-    width: 100%;
+    width: 100dvw;
     height: 100%;
 }
 .img__text-container{
@@ -1057,6 +1057,10 @@ footer{
 .right__buttons{
     margin-top: 7rem;
     text-align: center;
+}
+.content--scndPage{
+    margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 .properties--secondPage{
     justify-content: center;
@@ -1421,9 +1425,6 @@ footer{
     .properties__top p{
         width: 60%;
     }
-.properties__contents{
-    margin-left: 10rem;
-}
 .deal__items{
     margin-right: calc(100% - 100vw);
 }
@@ -1435,6 +1436,9 @@ footer{
     }
     .properties__contents {
         margin-left: calc(100vw - 64%);
+    }
+    .properties--secondPage {
+        margin-left: calc(100vw - 75%);
     }
 }
 @media (max-width: 575px){
@@ -1480,6 +1484,9 @@ footer{
         left: calc(100vw - 78%);
         width: 78%;
     }
+    .properties--secondPage {
+        margin-left: calc(100vw - 82%);
+    }
 }
 @media(max-width: 560px){
     .properties__contents{
@@ -1499,9 +1506,6 @@ footer{
     }
     .properties__top p {
         width: 28%;
-    }
-    .properties--secondPage{
-        margin-left: calc(100% - 55vw);
     }
 }
 @media (max-width: 500px){
@@ -1546,11 +1550,12 @@ footer{
         margin-right: calc(100% - 98vw);
     }
     .img__text-container {
-        left: calc(100% - 79dvw);
+        left: calc(100% - 78vw);
     }
     .buttons--scndPage{
-        left: calc(100vw - 74%);
+        left: calc(100vw - 67%);
     }
+
 }
 @media (max-width: 442px){
     .properties__contents{
@@ -1563,14 +1568,38 @@ footer{
         width: 60vw;
     }
     .buttons--scndPage {
-        left: calc(100vw - 67%);
+        left: calc(100vw - 63%);
     }
     .properties--secondPage {
-        margin-left: -60vw;
+        margin-left: -67vw;
     }
+    .content--scndPage {
+        width: 100%;
+    } .content--scndPage img{
+        width: 33%;
+    } .price--scndPage{
+        margin-right: 41rem;
+    } .black__btn--scndPage{
+        margin-right: 38rem;
+    }
+    
 @media (max-width: 400px){
     .properties__contents{
         margin-left: 1rem;
+    }
+    .properties--secondPage{
+        margin-left: 0rem;
+        left: -1rem;
+        width: 100%;
+    }
+    .content--scndPage img{
+        width: 46%;
+    }
+    .price--scndPage {
+        margin-right: 24rem;
+    }
+    .black__btn--scndPage {
+        margin-right: 22rem;
     }
 }
 @media (max-width: 390px){
@@ -1606,4 +1635,5 @@ footer{
     .img__text-container {
         left: calc(100% - 86dvw);
     }
+}
 }
