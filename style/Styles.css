@@ -1066,6 +1066,21 @@ footer{
     justify-content: center;
     margin-top: 4rem;
 }
+                     /* Property Page End!  */
+                     /* Property DEtails Start  */
+.thirdPage--toptext{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 25px;
+    font-family: 'poppins-medium';
+}  
+.thirdPage--table{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+}
+.propertyDetails__description {
+    justify-content: center;
+}              
                      /* Media Query's  */
 @media (max-width: 1440px){
     .top__text2 p{
