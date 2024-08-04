@@ -1076,7 +1076,10 @@ footer{
     font-size: 14px;
     padding: 10px 25px;
     font-family: 'poppins-medium';
-}  
+}
+.thirdPage__image{
+    margin-left: 4rem;
+}
 .thirdPage--table{
     display: inline-block;
     padding: 35px 30px;
@@ -1090,7 +1093,83 @@ footer{
 }  
 .no-border{
     border-bottom: none;
-}         
+}
+.details__title{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2rem;
+    width: 69.5%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+}     
+.details__title button{
+    background-color: var(--pink);
+    padding: 5px 20px;
+    margin-bottom: 1.2rem;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'poppins-medium';
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.details__title h2{
+    font-family: 'poppins-bold';
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.details__description{
+    margin-top: 2rem;
+    font-size: 14px;
+    width: 68%;
+    line-height: 32px;
+    color: #4a4a4a;
+}
+.details__description strong{
+    font-family: 'poppins-bold';
+}
+.details__description a{
+    color: #0d6efd !important;
+}
+.accordion {
+    margin-top: 2rem;
+    padding: 10px 0;
+    width: 80%;
+    background-color: var(--white2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .accordion-title {
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'poppins-medium';
+    margin: 10px 0;
+  }
+  
+  .accordion-content {
+    line-height: 30px;
+    padding: 10px;
+    display: none;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+}
+  
+  .accordion-content.show {
+    display: block;
+  }
                      /* Media Query's  */
 @media (max-width: 1440px){
     .top__text2 p{

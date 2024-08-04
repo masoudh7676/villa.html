@@ -5,7 +5,35 @@ hamMenu.addEventListener('click', () => {     //Hamburger Menu Function (Toggle 
   hamMenu.classList.toggle('active')
   mobileMenu.classList.toggle('active')
 })
-const slider = $.querySelector('.slider');
+
+const accordionTitles = document.querySelectorAll('.accordion-title'); // accordion start
+
+accordionTitles.forEach((title) => {
+  title.addEventListener('click', () => {
+    const content = title.nextElementSibling;
+    content.classList.toggle('show');
+    
+    if (content.classList.contains('show')) {
+      content.style.height = 'auto';
+      const height = content.scrollHeight;
+      content.style.height = '0px';
+      setTimeout(() => {
+        content.style.height = `${height}px`;
+      }, 0);
+    } else {
+      content.style.height = `${content.scrollHeight}px`;
+      setTimeout(() => {
+        content.style.height = '0px';
+      }, 300);
+    }
+    const accordionTitle = title.nextElementSibling;
+    accordionTitle.toggle('show');
+    accordionTitle.toggle('hide'); // toggle both classes
+    title.style.color = content.classList.contains('show')? '#f35525' : 'black';
+  });
+});             // accordion End
+                            
+const slider = $.querySelector('.slider');  // image slider
 const slides = $.querySelectorAll('.slide');
 let currentSlide = 0;
 const prevButton = $.querySelector('.prev');
@@ -100,3 +128,5 @@ buttons.forEach((button, index) => {
           });
   });
 });
+
+
