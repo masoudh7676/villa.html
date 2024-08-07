@@ -1070,6 +1070,7 @@ footer{
                      /* Property DEtails Start  */
 .propertyDetails__description{
     margin-top: 3rem;
+    justify-content: center;
 }
 .thirdPage--toptext{
     display: inline-block;
@@ -1077,16 +1078,10 @@ footer{
     padding: 10px 25px;
     font-family: 'poppins-medium';
 }
-.thirdPage__image{
-    margin-left: 4rem;
-}
 .thirdPage--table{
     display: inline-block;
     padding: 35px 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-}
-.propertyDetails__description {
-    justify-content: center;
 }
 .table__item--thirdPage{
     padding: 1.2rem 3rem;
@@ -1136,7 +1131,7 @@ footer{
 .accordion {
     margin-top: 2rem;
     padding: 10px 0;
-    width: 80%;
+    width: 70%;
     background-color: var(--white2);
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -1214,6 +1209,9 @@ footer{
         grid-template-columns: repeat(2, 590px);
 
     }
+    .propertyDetails__description{
+        gap: 1rem;
+    }
 }
 @media (max-width: 1280px){
     .container{
@@ -1257,6 +1255,32 @@ footer{
     }
     .email{
         padding: 41px;
+    }
+    .propertyDetails__description{
+        flex-direction: column;
+    }
+    .thirdPage__image{
+        width: 84.7%;
+    }
+    .thirdPage__image img{
+        width: 100%;
+    }
+    .thirdPage--table{
+        width: 85.5%;
+    }
+    .more__description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details__title{
+        width: 85%;
+    }
+    .details__description{
+        width: 84%;
+    }
+    .accordion{
+        width: 86%;
     }
 }
 @media (max-width: 1120px){
@@ -1520,6 +1544,9 @@ footer{
     .filter--button:nth-child(2), .filter--button:nth-child(1){
         margin-right: 0;
     }
+    .thirdPage__image img{
+        width: 100dvw;
+    }
   
 }
 @media (max-width: 660px){
@@ -1543,6 +1570,21 @@ footer{
     }
     .properties--secondPage {
         margin-left: calc(100vw - 75%);
+    }
+    .propertyDetails__description{
+        align-items: baseline;
+    }
+    .thirdPage--table {
+        width: 100%;
+    }
+    .more__description{
+        align-items: baseline;
+    }
+    .details__description{
+        width: 100vw;
+    }
+    .accordion-content{
+        width: 100vw;
     }
 }
 @media (max-width: 575px){
