@@ -1,4 +1,8 @@
 let $ = document
+$.addEventListener('DOMContentLoaded', () => {  //Onload Event
+  const preloadOverlay = $.querySelector('.preload-overlay');
+  preloadOverlay.style.display = 'none';
+});
 const hamMenu = $.querySelector ('.burger__menu')
 var mobileMenu = $.querySelector ('.mobile__menu')
 hamMenu.addEventListener('click', () => {     //Hamburger Menu Function (Toggle Buttons)
@@ -58,10 +62,6 @@ $.addEventListener ('keydown', (e) =>{    //Left And Right Arrow Key Function Fo
         moveSlide (1)
     }
 })
-$.addEventListener('DOMContentLoaded', () => {  //Onload Event
-    const preloadOverlay = $.querySelector('.preload-overlay');
-    preloadOverlay.style.display = 'none';
-});
 $.addEventListener('keydown', (e) =>{       //When Press ESC button The Ham Menu Will Closed
   if (e.keyCode == 27){
     hamMenu.classList.remove('active')

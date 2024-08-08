@@ -1032,7 +1032,7 @@ footer{
     position: relative;
     height: 56vh;
 }
-.img__banner img{
+.img__banner img , .contact__image img{         /* this will set the image size 4 both property & contact image */
     width: 100dvw;
     height: 100%;
 }
@@ -1067,7 +1067,7 @@ footer{
     margin-top: 4rem;
 }
                      /* Property Page End!  */
-                     /* Property DEtails Start  */
+                     /* Property Details Page Start  */
 .propertyDetails__description{
     margin-top: 3rem;
     justify-content: center;
@@ -1162,9 +1162,58 @@ footer{
     -o-transition: height 0.5s ease-in-out;
 }
   
-  .accordion-content.show {
+.accordion-content.show {
     display: block;
-  }
+}   
+                    /* Property Details Page End  */
+                    /* Contact us Page Start  */
+.main__part{
+    margin-top: 5rem;
+}
+.left__Section{
+    flex-direction: column;
+    align-items: baseline;
+}
+.section__heading h6{
+    color: var(--orange);
+    font-family: 'poppins-bold';
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.section__heading h2{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: 'poppins-bold';
+    color: var(--black);
+    width: 60%;
+    line-height: 40px;
+    margin-bottom: 3rem;
+}
+.section__heading--text {
+    font-size: 15px;
+    line-height: 28px;
+    color: #4a4a4a;
+    width: 80%;
+}    
+.communication{
+    margin-top: 3rem;
+}
+.phone--contact{
+    margin-bottom: 3rem;
+}  
+.map__form--contact{
+    position: unset;
+    width: 100dvw;
+}
+.map--contact{
+    position: unset;
+    margin-top: 5rem;
+    width: 67.2dvw;
+}
+.map--contact iframe{
+    position: unset;
+    width: 100%;
+}
                      /* Media Query's  */
 @media (max-width: 1440px){
     .top__text2 p{
@@ -1248,6 +1297,9 @@ footer{
     }
     .map__form{
         width: 370px;
+    }
+    .map__form--contact{
+        width: 100dvw;
     }
     .phone{
         width: 19.3rem;
