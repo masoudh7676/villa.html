@@ -1208,11 +1208,13 @@ footer{
 .map--contact{
     position: unset;
     margin-top: 5rem;
-    width: 67.2dvw;
+    width: 100%;
 }
 .map--contact iframe{
     position: unset;
     width: 100%;
+}.footer__contactUs{
+    margin-top: 8rem;
 }
                      /* Media Query's  */
 @media (max-width: 1440px){
@@ -1333,6 +1335,8 @@ footer{
     }
     .accordion{
         width: 86%;
+    }.map--contact iframe{
+        width: 100%;
     }
 }
 @media (max-width: 1120px){
@@ -1437,6 +1441,28 @@ footer{
     }
     footer{
         margin-top: 23rem;
+    }.main__part{
+        flex-direction: column;
+    }
+    .left__Section{
+        align-items: center;
+    }.section__heading{
+        width: 78%;
+    }.section__heading--text{
+        width: 77%;
+    }
+    .section__heading h2{
+        width: 100%;
+    }.communication{
+        width: 77.8%;
+    }
+    .phone--contact, .email--contact{
+        width: 41%;
+    }.map__form--contact{
+        margin-top: 4rem;
+    }.map--contact{
+        width: 100dvw;
+        text-align: center;
     }
 
 }
@@ -1461,6 +1487,8 @@ footer{
     }
     .phone__email{
         left: 3.1rem;    
+    }.phone--contact, .email--contact {
+        width: 54%;
     }
 }
 @media (max-width: 825px){
@@ -1637,6 +1665,11 @@ footer{
     }
     .accordion-content{
         width: 100vw;
+    }.phone--contact ,.email--contact{
+        width: 55%;
+    }.map__form--contact {
+        margin-left: calc(100dvw - 98%);
+        width: calc(100dvw - 19%);
     }
 }
 @media (max-width: 575px){
@@ -1708,7 +1741,7 @@ footer{
 }
 @media (max-width: 500px){
     .container2{
-        width: 46rem;
+        width: 45rem;
     }
     .intro__bg{
         height: 120vw;
@@ -1779,6 +1812,8 @@ footer{
         margin-right: 41rem;
     } .black__btn--scndPage{
         margin-right: 38rem;
+    }.img__text-container {
+        left: calc(100% - 91vw);
     }
     
 @media (max-width: 400px){
@@ -1821,7 +1856,10 @@ footer{
     }
     .properties--secondPage{
         margin-right: 2rem;
+    }.phone--contact, .email--contact {
+        width: 46%;
     }
+}
 }
 @media (max-width: 360px){
     .intro__bg{
@@ -1833,5 +1871,4 @@ footer{
     .img__text-container {
         left: calc(100% - 86dvw);
     }
-}
 }
