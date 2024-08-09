@@ -1670,6 +1670,10 @@ footer{
     }.map__form--contact {
         margin-left: calc(100dvw - 98%);
         width: calc(100dvw - 19%);
+    }.container--contact{
+        width: calc(100% - 5vw);
+    }.phone--contact, .email--contact{
+        width: auto;
     }
 }
 @media (max-width: 575px){
@@ -1737,6 +1741,8 @@ footer{
     }
     .properties__top p {
         width: 28%;
+    }.section__heading h2 {
+        width: 82dvw;
     }
 }
 @media (max-width: 500px){
