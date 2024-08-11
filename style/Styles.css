@@ -653,13 +653,25 @@ a {
     border-radius: 5px;
     background-color: var(--black);
     color: var(--white);
+    transition: 250ms ease;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -ms-transition: 250ms ease;
+    -o-transition: 250ms ease;
+}
+.right__buttons button:hover{
+    color: var(--orange);
+}
+.right__buttons button.selected {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.right__buttons button.selected:hover {
+    color: var(--orange); /* Prevent color change on hover */
 }
 .active__btn{
     background-color: var(--orange) !important;
     color: var(--white) !important;
-}
-.right__buttons :nth-child(1){
-    background-color: var(--orange);
 }
 .right__buttons :nth-child(1), .right__buttons :nth-child(2){
     margin-right: 15px;
@@ -772,6 +784,19 @@ a {
     margin-bottom: 5rem;
     text-transform: capitalize;
     
+}
+.filter--button{
+    transition: 250ms ease;
+    -webkit-transition: 250ms ease;
+    -moz-transition: 250ms ease;
+    -ms-transition: 250ms ease;
+    -o-transition: 250ms ease;
+}
+.filter--button:hover{
+    color: var(--orange);
+}
+.filter--button:nth-child(3){
+    margin-right: 1rem;
 }
 .img__container img{
     border-radius: 5px;
@@ -1053,10 +1078,6 @@ footer{
     font-family: 'poppins-bold';
     font-size: 48px;
     color: var(--white2);
-}
-.right__buttons{
-    margin-top: 7rem;
-    text-align: center;
 }
 .content--scndPage{
     margin-bottom: 2rem;
@@ -1621,7 +1642,7 @@ footer{
     .filter--button{
         width: 45%;
     }
-    .filter--button:nth-child(2), .filter--button:nth-child(1){
+    .filter--button:nth-child(2), .filter--button:nth-child(1),.filter--button:nth-child(3){
         margin-right: 0;
     }
     .thirdPage__image img{

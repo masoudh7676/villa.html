@@ -1,5 +1,5 @@
 // Get the container element
-var $container = $('.properties__contents');
+var $container = jQuery('.properties__contents');
 
 // Initialize Isotope
 $container.isotope({
@@ -16,12 +16,12 @@ $container.isotope({
 });
 
 // Filter buttons
-$('.right__buttons .button').on('click', function () {
-    $('.right__buttons .button').removeClass('active__btn');
-    $(this).addClass('active__btn');
-    var filterValue = $(this).attr('data-filter');
+jQuery('.right__buttons .button').on('click', function () {
+    jQuery('.right__buttons .button').removeClass('active__btn');
+    jQuery(this).addClass('active__btn');
+    var filterValue = jQuery(this).attr('data-filter');
     $container.isotope({ filter: filterValue });
 });
 
 // Show all items on page load
-$('.right__buttons .active__btn').trigger('click');
+jQuery('.right__buttons .active__btn').trigger('click');

@@ -101,9 +101,9 @@ titles.forEach((title, index) =>{
   });
 });
 
-const buttons = $.querySelectorAll('.active__btn, .villa__btn, .penthouse__btn');
+const buttons = $.querySelectorAll('.appartment, .villa__btn, .penthouse__btn');
+const appartmentBtn = $.querySelector('.appartment')
 const locations = $.querySelectorAll('.main__items, .main__items--villa, .main__items--penthouse');
-
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     // Show the corresponding content element
@@ -121,9 +121,9 @@ buttons.forEach((button, index) => {
           // Update button colors
           buttons.forEach((otherButton) => {
             if (otherButton !== button) {
-              otherButton.style.backgroundColor = 'black'; // reset to default color
+              otherButton.classList.remove('active__btn');
             } else {
-              button.style.backgroundColor = '#f35525'; // set to orange
+              button.classList.add('active__btn');
             }
           });
   });
