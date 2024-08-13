@@ -1778,6 +1778,9 @@ footer{
     }.section__heading h2 {
         width: 82dvw;
     }
+    .text{
+        width: 100%;
+    }
 }
 @media (max-width: 500px){
     .container2{
