@@ -1068,6 +1068,9 @@ footer{
     top: 32%;
     text-align: center;
 }
+.buttons--scndPage{
+    text-align: center;
+}
 .img__top-text{
     color: var(--black);
     background-color: var(--white2);
@@ -1086,6 +1089,9 @@ footer{
 .properties--secondPage{
     justify-content: center;
     margin-top: 4rem;
+}
+.footer__property{
+    margin-top: 6rem;
 }
                      /* Property Page End!  */
                      /* Property Details Page Start  */
@@ -1185,6 +1191,9 @@ footer{
   
 .accordion-content.show {
     display: block;
+}
+.footer__p--details{
+    margin-top: 6rem;
 }   
                     /* Property Details Page End  */
                     /* Contact us Page Start  */
@@ -1742,6 +1751,9 @@ footer{
     }
     .properties--secondPage {
         margin-left: calc(100vw - 82%);
+    }
+    .filter--button:nth-child(3){
+        margin-bottom: 2rem;
     }
 }
 @media(max-width: 560px){
