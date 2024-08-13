@@ -1610,7 +1610,8 @@ footer{
         left: 4rem;
     }
     .visible__text{
-        width: 76vw;
+        width: 100%;
+        padding: 0;
     }
     .left__title p {
         width: 54vw;
