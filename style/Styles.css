@@ -2208,6 +2208,9 @@ footer{
         .filter--button{
             width: 40%;
         }
+        .details__description{
+            margin-left: 4dvw;
+        }
 }
 
 @media (max-width: 390px){
