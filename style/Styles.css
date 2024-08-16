@@ -2192,6 +2192,9 @@ footer{
         left: -1rem;
         width: 100%;
     }
+    .center__content {
+        margin-right: calc(100dvw - 14%);
+    }
     .top__text2{
         left: calc(100% - 87vw);
     }
@@ -2232,9 +2235,6 @@ footer{
     .top__text h2{
         font-size: 38px;
     }
-    .center__content {
-        margin-right: calc(100dvw - 5%);
-    }
     .right__buttons button {
         width: 60%;
     }
@@ -2268,5 +2268,8 @@ footer{
     }
     .img__text-container {
         left: calc(100% - 86dvw);
+    }
+    .center__content{
+        margin-right: calc(100dvw - 2%);
     }
 }
