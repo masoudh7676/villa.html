@@ -1800,7 +1800,7 @@ footer{
         font-size: 50px;
     }
     .center__content{
-         margin-right: calc(100% - 52vh);
+         margin-right: calc(100% - 45vh);
     }
     .top__text{
         margin-right: 2rem;
