@@ -1986,7 +1986,7 @@ footer{
                 align-items: baseline;
     }
     .details__description{
-        width: 100vw;
+        width: 85dvw;
     }
     .accordion-content{
         width: 100vw;
@@ -2189,6 +2189,9 @@ footer{
         left: -1rem;
         width: 100%;
     }
+    .top__text2{
+        left: calc(100% - 87vw);
+    }
     .content--scndPage img{
         width: 46%;
     }
@@ -2201,6 +2204,9 @@ footer{
     .top__text h2{
             font-size: 38px;
             width: 83%;
+        }
+        .filter--button{
+            width: 40%;
         }
 }
 
@@ -2217,6 +2223,18 @@ footer{
     .top__text h2{
         font-size: 38px;
     }
+    .center__content {
+        margin-right: calc(100dvw - 5%);
+    }
+    .right__buttons button {
+        width: 60%;
+    }
+    .left__table {
+        width: 90%;
+    }
+    .phone , .email{
+            width: 93%;
+    }
     .buttons--scndPage{
         left: calc(100vw - 62%);
     }
@@ -2224,6 +2242,14 @@ footer{
         margin-right: 2rem;
     }.phone--contact, .email--contact {
         width: 80dvw;
+    }
+    .details__title h2{
+        width: 45%;
+    }.img__text-bottom{
+        font-size: 38px;
+    }
+    .filter--button{
+        width: 40% !important;
     }
 }
 @media (max-width: 360px){
