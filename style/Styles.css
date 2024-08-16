@@ -2211,6 +2211,9 @@ footer{
         .filter--button{
             width: 40%;
         }
+        .details__title h2{
+            width: 45%;
+        }
         .details__description{
             margin-left: 4dvw;
         }
@@ -2249,9 +2252,7 @@ footer{
     }.phone--contact, .email--contact {
         width: 80dvw;
     }
-    .details__title h2{
-        width: 45%;
-    }.img__text-bottom{
+    .img__text-bottom{
         font-size: 38px;
     }
     .filter--button{
