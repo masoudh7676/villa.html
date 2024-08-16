@@ -1988,8 +1988,11 @@ footer{
     .details__description{
         width: 85dvw;
     }
+    .more__description{
+        margin-left: 2dvw;
+    }
     .accordion-content{
-        width: 100vw;
+        width: 95dvw;
     }.phone--contact ,.email--contact{
         width: 55%;
     }.map__form--contact {
