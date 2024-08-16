@@ -1727,7 +1727,7 @@ footer{
         margin-bottom: 2rem;
     }
     .center__content{
-        margin-right: calc(100% - 61vh);
+        margin-right: calc(100% - 55vh);
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -1801,7 +1801,10 @@ footer{
     }
     .top__text{
         margin-right: 2rem;
-    } 
+    }
+    .center__content{
+     margin-right: calc(100% - 45vh);
+    }
     .map{
         left: 3.5rem;
     }
