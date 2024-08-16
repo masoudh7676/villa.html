@@ -1727,7 +1727,7 @@ footer{
         margin-bottom: 2rem;
     }
     .center__content{
-        margin-right: calc(100% - 55vh);
+        margin-right: calc(100% - 56.5vh);
         display: flex;
         flex-direction: column;
         align-items: baseline;
@@ -1800,13 +1800,13 @@ footer{
         font-size: 50px;
     }
     .center__content{
-         margin-right: calc(100% - 45vh);
+         margin-right: calc(100% - 52vh);
+    }
+    .center__table{
+        width: 83%;
     }
     .top__text{
         margin-right: 2rem;
-    }
-    .center__content{
-     margin-right: calc(100% - 45vh);
     }
     .map{
         left: 3.5rem;
@@ -1842,7 +1842,10 @@ footer{
         margin-left: 1rem;
     }
     .top__text{
-     margin-left: calc(100vw - 96%);
+        margin-left: calc(100dvw - 98%);
+    }
+    .right__table{
+        margin-right: calc(100% - 98dvw);
     }
     .left__title p{
         width: 60vw;
@@ -1855,15 +1858,20 @@ footer{
     }
     .content--scndPage {
         width: 100%;
-    } .content--scndPage img{
+    } 
+    .content--scndPage img{
         width: 33%;
-    } .price--scndPage{
+    } 
+    .price--scndPage{
         margin-right: 41rem;
-    } .black__btn--scndPage{
+    } 
+    .black__btn--scndPage{
         margin-right: 38rem;
-    }.img__text-container {
+    }
+    .img__text-container {
         left: calc(100% - 91vw);
     }
+}
     
 @media (max-width: 400px){
     .properties__contents{
@@ -1883,7 +1891,12 @@ footer{
     .black__btn--scndPage {
         margin-right: 22rem;
     }
+    .top__text h2{
+            font-size: 38px;
+            width: 83%;
+        }
 }
+
 @media (max-width: 390px){
     .properties__contents{
         margin-left: 1rem;
@@ -1895,7 +1908,7 @@ footer{
         left: 13%;
     }
     .top__text{
-        margin-left: calc(100vw - 89%);
+        margin-left: calc(100vw - 78%);
     }
     .top__text h2{
         font-size: 38px;
@@ -1908,7 +1921,6 @@ footer{
     }.phone--contact, .email--contact {
         width: 46%;
     }
-}
 }
 @media (max-width: 360px){
     .intro__bg{
