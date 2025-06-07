@@ -7,4 +7,3 @@ Link: https://masoudh7676.github.io/villa.html/
 ### fully responsive.
 ### added left and right arrow key for better UX.
 ### has custumized scroll bar.
-### thank you for your attention 🙏🏻🙏🏻🙏🏻.
